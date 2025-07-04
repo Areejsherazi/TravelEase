@@ -19,8 +19,8 @@ a {
 
 /* Header & Navigation */
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../assets/banner.jpg');
+    background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), 
+                url('https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
     color: white;
@@ -33,7 +33,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0 0 0 / 50%);
 }
 
 .logo {
@@ -57,7 +57,8 @@ nav {
     transition: color 0.3s;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: #4CAF50;
 }
 
@@ -73,13 +74,13 @@ nav {
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
 }
 
 .cta-button {
@@ -149,7 +150,7 @@ h2::after {
 .overview-image img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
 }
 
 /* Featured Destinations */
@@ -163,7 +164,7 @@ h2::after {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
     transition: transform 0.3s;
 }
 
@@ -195,10 +196,6 @@ h2::after {
     transition: color 0.3s;
 }
 
-.destination-card a:hover {
-    color: #45a049;
-}
-
 /* Reviews Section */
 .review-container {
     display: grid;
@@ -210,7 +207,7 @@ h2::after {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
 }
 
 .rating {
@@ -239,7 +236,7 @@ h2::after {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
     transition: transform 0.3s;
 }
 
@@ -338,12 +335,12 @@ footer {
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgb(255 255 255 / 10%);
     font-size: 0.9rem;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -353,6 +350,20 @@ footer {
     }
     
     .nav-links {
-        display: none; /* In a real implementation, you'd add a mobile menu here */
+        display: none;
     }
+}
+
+/* Moved selectors to fix no-descending-specificity errors */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #4CAF50;
+}
+
+.destination-card a:hover {
+    color: #45a049;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
 }
