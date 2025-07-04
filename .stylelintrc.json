@@ -1,0 +1,6 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "value-keyword-case": "lower",
+    "selector-type-case": "lower"  }
+}

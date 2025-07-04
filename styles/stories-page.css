@@ -1,16 +1,18 @@
 .story-card {
-    background-color: #ffffff;
+    background-color: #fff;
     border-left: 5px solid #007bff;
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.1);
+    box-shadow: 0 0 8px rgb(0 123 255 / 10%);
 }
+
 .story-card img {
     max-height: 200px;
     object-fit: cover;
     border-radius: 6px;
 }
+
 .story-title {
     color: #007bff;
 }
