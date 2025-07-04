@@ -63,6 +63,7 @@ nav {
     font-weight: 500;
     transition: color 0.3s;
 }
+
 .destination-card a {
     display: inline-block;
     margin: 0 1rem 1.5rem;
