@@ -42,6 +42,13 @@ nav {
     color: #fff;
 }
 
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -54,6 +61,13 @@ nav {
 .nav-links a {
     color: white;
     font-weight: 500;
+    transition: color 0.3s;
+}
+.destination-card a {
+    display: inline-block;
+    margin: 0 1rem 1.5rem;
+    color: #4CAF50;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
@@ -201,13 +215,7 @@ h2::after {
     color: #666;
 }
 
-.destination-card a {
-    display: inline-block;
-    margin: 0 1rem 1.5rem;
-    color: #4CAF50;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+
 
 /* Reviews Section */
 .review-container {
@@ -330,11 +338,7 @@ footer {
     gap: 1rem;
 }
 
-.social-icons a {
-    color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-}
+
 
 .footer-bottom {
     text-align: center;
