@@ -35,3 +35,4 @@ jobs:
         with:
           artifact_name: "build-artifact-production"
           token: "${{ github.token }}"
+# CD pipeline added for production environment
