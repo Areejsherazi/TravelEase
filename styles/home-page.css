@@ -57,8 +57,21 @@ nav {
     transition: color 0.3s;
 }
 
+/* All hover states grouped together at the same specificity level */
 .nav-links a:hover,
 .nav-links a.active {
+    color: #4CAF50;
+}
+
+.destination-card a:hover {
+    color: #45a049;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+.footer-section ul li a:hover {
     color: #4CAF50;
 }
 
@@ -302,10 +315,6 @@ footer {
     margin-bottom: 0.8rem;
 }
 
-.footer-section ul li a:hover {
-    color: #4CAF50;
-}
-
 .footer-section p {
     margin-bottom: 0.8rem;
     display: flex;
@@ -325,10 +334,6 @@ footer {
     color: white;
     font-size: 1.2rem;
     transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #4CAF50;
 }
 
 .footer-bottom {
@@ -352,18 +357,4 @@ footer {
     .nav-links {
         display: none;
     }
-}
-
-/* Moved selectors to fix no-descending-specificity errors */
-.nav-links a:hover,
-.nav-links a.active {
-    color: #4CAF50;
-}
-
-.destination-card a:hover {
-    color: #45a049;
-}
-
-.social-icons a:hover {
-    color: #4CAF50;
 }
