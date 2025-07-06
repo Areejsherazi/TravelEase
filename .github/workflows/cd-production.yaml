@@ -3,7 +3,7 @@ name: wf-cd-production
 on:
   push:
     branches:
-      - develop
+      - production
 
 jobs:
   upload-artifact-production:
